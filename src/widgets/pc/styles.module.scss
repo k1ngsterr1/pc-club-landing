@@ -1,0 +1,39 @@
+.background {
+    position: relative;
+    height: 50vh;
+}
+
+.background::before,
+.background::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.background::before {
+    width: 1500px;
+    height: 1500px;
+    top: -600px;
+    left: -600px;
+    background-image: url('../../assets/PC/PurpleEllipse.webp');
+}
+
+.background::after {
+    width: 1500px;
+    height: 1500px;
+    top: -100px;
+    left: 200px;
+    background-image: url('../../assets/PC/YellowEllipse.webp');
+}
+
+.home_screen_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -300px;
+    margin-right: -240px;
+    height: 1250px;
+    overflow: hidden;
+}
