@@ -12,7 +12,8 @@ export default {
       colors: {
         gray: "rgba(255, 255, 255, 0.7)",
         white: "rgba(255, 255, 255, 1)",
-        yellow: "rgba(235, 255, 0, 1)"
+        yellow: "rgba(235, 255, 0, 1)",
+        inheritGray: "rgba(255, 255, 255, 0.05)"
       },
     },
   },

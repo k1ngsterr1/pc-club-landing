@@ -18,21 +18,23 @@ import styles from "./styles.module.scss";
 
 export const HomeScreen = () => {
     return (
-        <div className={styles.container}>
-            <HeaderPC />
-            <HomeScreenPc />
-            <ElevatingScreenPc />
-            {/* <FeaturesScreen />
+        <div className={styles.bg}>
+            <div className={styles.container}>
+                <HeaderPC />
+                <HomeScreenPc />
+                <ElevatingScreenPc />
+                {/* <FeaturesScreen />
                 <AboutScreen />
                 <FAQScreen /> */}
-            <div className={styles.container__mob}>
-                {/* <HeaderMob /> */}
-                <div className={styles.container__mob__background}>
-                    {/* <HomeScreenMob /> */}
-                </div>
-                {/* <FeaturesScreenMob />
+                <div className={styles.container__mob}>
+                    {/* <HeaderMob /> */}
+                    <div className={styles.container__mob__background}>
+                        {/* <HomeScreenMob /> */}
+                    </div>
+                    {/* <FeaturesScreenMob />
                 <AboutUsScreenMob />
                 <QuestionsScreenMob /> */}
+                </div>
             </div>
         </div>
     );
