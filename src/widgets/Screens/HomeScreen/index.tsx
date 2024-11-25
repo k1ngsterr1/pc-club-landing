@@ -2,6 +2,7 @@
 import { HeaderPC } from "@/features/Header/PC/header-pc";
 import { HomeScreenPc } from "@/widgets/pc/home-screen-pc";
 import { ElevatingScreenPc } from "@/widgets/pc/elevating-screen-pc";
+import { SuccessScreenPc } from "@/widgets/pc/success-screen-pc";
 
 // import { AboutScreen } from "../../pc/about-screen";
 // import { FAQScreen } from "../../pc/faq-screen";
@@ -23,6 +24,7 @@ export const HomeScreen = () => {
                 <HeaderPC />
                 <HomeScreenPc />
                 <ElevatingScreenPc />
+                <SuccessScreenPc />
                 {/* <FeaturesScreen />
                 <AboutScreen />
                 <FAQScreen /> */}

@@ -2,6 +2,7 @@ import Image from "next/image";
 import ElevatingCard from "@/entities/Cards/PC/ElevatingCard";
 import { Paragraph } from "@/shared/ui/Paragraph/PC";
 import { ElevatingTab } from "@/entities/Cards/PC/ElevatingTab";
+import { SuccessTab } from "@/entities/Tabs/PC/Success";
 
 import BookScreen from '@/assets/PC/ElevatingScreen/BookScreen.webp'
 import OurClubs from '@/assets/PC/ElevatingScreen/OurClubs.webp'
@@ -10,7 +11,7 @@ import PayScreen from '@/assets/PC/ElevatingScreen/PayScreen.webp'
 import styles from './styles.module.scss'
 
 
-export const ElevatingScreenPc = () => {
+export const SuccessScreenPc = () => {
     const cards = [
         {
             title: "Loyalty system: achievements and rewards builder",
@@ -27,18 +28,10 @@ export const ElevatingScreenPc = () => {
     ]
     return (
         <div className={`flex items-center flex-col mt-32 ${styles.background}`}>
-            <h2 className="text-[64px] text-center w-[80%] text-white font-[700] ">Attract customers with superior service and increase your
-                gaming center's revenue.</h2>
+            <h3 className="text-[64px] text-center text-white font-[700] ">Success stories.</h3>
             <Paragraph children="Tools to improve the quality of user experience. Guests will want to return and stay longer." className="mt-12 text-center" width="20%" />
             <div className="flex flex-col">
-                <div className="flex justify-between gap-10 mt-16">
-                    {cards.map((card, index) => (
-                        <div className="" key={index}>
-                            <ElevatingCard title={card.title} icon={card.icon} />
-                        </div>
-                    ))}
-                </div>
-                <ElevatingTab />
+                <SuccessTab />
             </div>
         </div>
     );
