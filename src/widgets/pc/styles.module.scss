@@ -9,6 +9,7 @@
     border-radius: 50%;
     background-size: cover;
     background-position: center;
+    z-index: -1;
 }
 
 .background::before {
@@ -17,6 +18,7 @@
     top: -600px;
     left: -600px;
     background-image: url('../../assets/PC/PurpleEllipse.webp');
+    z-index: -1;
 }
 
 .background::after {
@@ -25,6 +27,7 @@
     top: -100px;
     left: 200px;
     background-image: url('../../assets/PC/YellowEllipse.webp');
+    z-index: -1;
 }
 
 .home_screen_image {

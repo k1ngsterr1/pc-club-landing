@@ -1,6 +1,5 @@
 "use client";
 import { useRef, useEffect, useState } from "react";
-import Image from "next/image";
 import ArrowRight from "@/assets/PC/arrow-right";
 
 interface IAccordionProps {
@@ -12,7 +11,7 @@ interface IAccordionProps {
     isLast: boolean;
 }
 
-export const SuccessAccordion = ({
+export const Accordion = ({
     id,
     title,
     description,
@@ -33,16 +32,15 @@ export const SuccessAccordion = ({
 
     return (
         <div
-            className="w-[800px] flex flex-col cursor-pointer"
+            className="w-[800px] flex flex-col cursor-pointer mt-4"
             onClick={() => onToggle(id)}
         >
             <div className="flex flex-row items-center justify-between w-full py-4">
                 <span className="text-[#FFFFFFCC] font-[400] text-[20px]">{title}</span>
-                <div className={`transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"
+                <div className={`transition-transform duration-300 text-white ${isOpen ? "rotate-180" : "rotate-90"
                     }`}>
                     <ArrowRight />
                 </div>
-
             </div>
             <div
                 ref={contentRef}
@@ -51,8 +49,8 @@ export const SuccessAccordion = ({
             >
                 <p className="mt-2 mb-2 font-[300] text-lg text-white">{description}</p>
             </div>
-            <hr className="w-full h-[1px] bg-[#FFFFFF1A]" />
-            {isLast && <hr className="w-full h-[1px] bg-[#FFFFFF1A]" />}
+            <hr className="w-full h-[1px] text-white" />
+            {isLast && <hr className="w-full h-[1px] text-white" />}
         </div>
     );
 };
